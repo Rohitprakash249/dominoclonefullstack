@@ -6,7 +6,7 @@ export default function Orders(props) {
   const [order, setOrders] = useState([]);
   useEffect(function getOrders() {
     async function getAllOrders() {
-      const res = await fetch(`http://localhost:4000/api/getAllOrders`, {
+      const res = await fetch(`https://dominoclonebackend.vercel.app/api/getAllOrders`, {
         method: "GET",
         credentials: "include",
       });

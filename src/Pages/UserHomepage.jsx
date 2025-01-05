@@ -13,7 +13,7 @@ export default function UserHomepage(props) {
   const dispatch = useDispatch();
   useEffect(() => {
     async function getUserDetails() {
-      const res = await fetch(`http://localhost:4000/api/getUserDetails`, {
+      const res = await fetch(`https://dominoclonebackend.vercel.app/api/getUserDetails`, {
         method: "GET",
         credentials: "include",
         headers: {

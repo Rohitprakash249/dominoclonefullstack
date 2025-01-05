@@ -48,7 +48,7 @@ export default function SaveAddressAsButton({
       dispatch({ type: "customer/updateAddress", payload: newData });
     }
     if (Object.entries(currentAddress).length === 0) {
-      const res = await fetch("http://localhost:4000/api/setSelectedAddress", {
+      const res = await fetch("https://dominoclonebackend.vercel.app/api/setSelectedAddress", {
         method: "POST",
         credentials: "include",
         headers: {

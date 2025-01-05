@@ -83,7 +83,7 @@ export default function SignUp(props) {
         confirmPassword: confirmPassword,
         contactNo: contactNo,
       };
-      const res = await fetch("http://localhost:4000/api/register", {
+      const res = await fetch("https://dominoclonebackend.vercel.app/api/register", {
         method: "POST",
         credentials: "include",
         headers: {

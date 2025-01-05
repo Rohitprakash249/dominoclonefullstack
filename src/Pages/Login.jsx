@@ -28,7 +28,7 @@ export default function Login(props) {
         email: email,
         password: password,
       };
-      const res = await fetch("http://localhost:4000/api/login", {
+      const res = await fetch("https://dominoclonebackend.vercel.app/api/login", {
         method: "POST",
         credentials: "include",
         headers: {

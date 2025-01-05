@@ -25,7 +25,7 @@ export default function UpdateCurrentLocation(props) {
 
     const newSelectedAddress = { ...selectedAddress, location: mapPosition };
 
-    const res = await fetch("http://localhost:4000/api/setSelectedAddress", {
+    const res = await fetch("https://dominoclonebackend.vercel.app/api/setSelectedAddress", {
       method: "POST",
       credentials: "include",
       headers: {

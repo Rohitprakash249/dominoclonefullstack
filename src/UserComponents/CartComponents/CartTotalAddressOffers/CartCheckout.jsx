@@ -66,7 +66,7 @@ export default function CartCheckout({ setErrorOccured, setErrorMessage }) {
         finalData.couponApplied === "no Coupon Applied"
       ) {
         setPlacingOrder(true);
-        const res = await fetch("http://localhost:4000/api/createOrder", {
+        const res = await fetch("https://dominoclonebackend.vercel.app/api/createOrder", {
           method: "POST", // PUT method for updating resources
           credentials: "include",
           headers: {

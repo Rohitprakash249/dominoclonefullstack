@@ -10,7 +10,7 @@ export default function SingleAddress({ addressInfo }) {
   async function setSelectedAddress() {
     setUpdatingAddress(true);
 
-    const res = await fetch("http://localhost:4000/api/setSelectedAddress", {
+    const res = await fetch("https://dominoclonebackend.vercel.app/api/setSelectedAddress", {
       method: "POST",
       credentials: "include",
       headers: {

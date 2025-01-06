@@ -34,7 +34,7 @@ export default function SaveAddressAsButton({
     };
     const newData = [...addressData, data];
 
-    const res = await fetch("http://localhost:4000/api/updateAddress", {
+    const res = await fetch("https://dominoclonebackend.vercel.app/api/updateAddress", {
       method: "POST",
       credentials: "include",
       headers: {
